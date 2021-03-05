@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MvcCrudModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Table_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="clearance_branch" Type="nvarchar" MaxLength="50" />
+          <Property Name="date" Type="nvarchar" MaxLength="50" />
+          <Property Name="valid_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="complete_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="husband_surname" Type="nvarchar" MaxLength="50" />
+          <Property Name="nickname" Type="nvarchar" MaxLength="50" />
+          <Property Name="other_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="present_address" Type="nvarchar" MaxLength="50" />
+          <Property Name="date_of_birth" Type="nvarchar" MaxLength="50" />
+          <Property Name="place_of_birth" Type="nvarchar" MaxLength="50" />
+          <Property Name="educ_attainment" Type="nvarchar" MaxLength="50" />
+          <Property Name="contact_no" Type="nvarchar" MaxLength="50" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="citizenship" Type="nvarchar" MaxLength="50" />
+          <Property Name="complexion" Type="nvarchar" MaxLength="50" />
+          <Property Name="scar_marks" Type="nvarchar" MaxLength="50" />
+          <Property Name="religion" Type="nvarchar" MaxLength="50" />
+          <Property Name="height" Type="nvarchar" MaxLength="50" />
+          <Property Name="weight" Type="nvarchar" MaxLength="50" />
+          <Property Name="spouse_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="father_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="father_birthplace" Type="nvarchar" MaxLength="50" />
+          <Property Name="mother_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="mother_birthplace" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="MvcCrudModelStoreContainer">
+          <EntitySet Name="Table_1" EntityType="Self.Table_1" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MvcCrudModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Table_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="clearance_branch" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="valid_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="complete_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="husband_surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="other_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="present_address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date_of_birth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="place_of_birth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="educ_attainment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contact_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="citizenship" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="complexion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="scar_marks" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="religion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="height" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="weight" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="spouse_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="father_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="father_birthplace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mother_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mother_birthplace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="dbModel" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Table_1" EntityType="Self.Table_1" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MvcCrudModelStoreContainer" CdmEntityContainer="dbModel">
+          <EntitySetMapping Name="Table_1">
+            <EntityTypeMapping TypeName="MvcCrudModel.Table_1">
+              <MappingFragment StoreEntitySet="Table_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="clearance_branch" ColumnName="clearance_branch" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="valid_id" ColumnName="valid_id" />
+                <ScalarProperty Name="complete_name" ColumnName="complete_name" />
+                <ScalarProperty Name="husband_surname" ColumnName="husband_surname" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="other_name" ColumnName="other_name" />
+                <ScalarProperty Name="present_address" ColumnName="present_address" />
+                <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+                <ScalarProperty Name="place_of_birth" ColumnName="place_of_birth" />
+                <ScalarProperty Name="educ_attainment" ColumnName="educ_attainment" />
+                <ScalarProperty Name="contact_no" ColumnName="contact_no" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="citizenship" ColumnName="citizenship" />
+                <ScalarProperty Name="complexion" ColumnName="complexion" />
+                <ScalarProperty Name="scar_marks" ColumnName="scar_marks" />
+                <ScalarProperty Name="religion" ColumnName="religion" />
+                <ScalarProperty Name="height" ColumnName="height" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="spouse_name" ColumnName="spouse_name" />
+                <ScalarProperty Name="father_name" ColumnName="father_name" />
+                <ScalarProperty Name="father_birthplace" ColumnName="father_birthplace" />
+                <ScalarProperty Name="mother_name" ColumnName="mother_name" />
+                <ScalarProperty Name="mother_birthplace" ColumnName="mother_birthplace" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
